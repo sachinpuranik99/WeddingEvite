@@ -30,7 +30,7 @@ function pauseAudio() {
 };
 
 // Set the date we're counting down to
-var countDownDate = new Date("Feb 14, 2021 00:00:00").getTime();
+var countDownDate = new Date("Dec 15, 2023 17:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -92,9 +92,9 @@ var styles2 = [
     , 'font-size: 32px'
 ].join(';');
 
-console.log('\n\n%c SAVE THE DATE: 14th Feb, 2021', styles);
+console.log('\n\n%c SAVE THE DATE: 15th Dec, 2023', styles);
 
-console.log('%cYour presence is requested!%c\n\nRegards: Sarthak Jain', styles1, styles2);
+console.log('%cYour presence is requested!%c\n\nRegards: Sachin Puranik', styles1, styles2);
 
 console.log(
     `%c शादी में जलूल जलूल आना होगा \n\n`,
