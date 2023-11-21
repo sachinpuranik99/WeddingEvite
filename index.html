@@ -147,9 +147,9 @@
         <!-- <a href="https://g.page/Mishttenresort" target="_blank">
           <div class="venue">SEE THE VENUE</div>
         </a> -->
-        <a href="./assets/invitation.pdf" href="{{.}}" target="_blank">
+        <a href="./assets/invitation.pdf" target="_blank" id="openPdfLink">
           <div class="venue">OPEN INVITATION CARD</div>
-        </a>
+      </a>
 
         <!--<a href="./assets/reception.gif" href="{{.}}" target="_blank">
          <div class="venue">OPEN RECEPTION INVITATION CARD</div>
@@ -335,6 +335,21 @@
         });
       }
     </script>
+
+
+<script>
+  // Add an event listener to the link
+  document.getElementById('openPdfLink').addEventListener('click', function(event) {
+      // Prevent the default click behavior (opening the link)
+      event.preventDefault();
+      
+      // Get the href attribute of the link
+      var pdfLink = this.getAttribute('href');
+      
+      // Open the PDF in a new tab
+      window.open(pdfLink, '_blank');
+  });
+</script>
       
    
    
